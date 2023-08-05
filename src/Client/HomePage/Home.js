@@ -68,7 +68,7 @@ function Home() {
             {
                   courseTitle : "Nematology",
                   Image : image5,
-                  Description  : "Nematology is the scientific discipline concerned with the study of nematodes or roundworms",
+                  Description  : "Nematology is the scientific discipline concerned with the study of nematodes or roundworms.",
              },
              {
               courseTitle : "Root Vegetable",

@@ -1,31 +1,25 @@
 import React, { useEffect, useState } from 'react'
 import {BrowserRouter as Router ,Route, Routes, } from "react-router-dom"
 
-import Navbar from './Admin/Header/Navbar'
-import Home from './Admin/HomePage/Home'
-
-
-             //Upload  Lecture
-import Upload from './Admin/Uploads/Upload'
-import UploadLectureCrp304 from './Admin/Uploads/UploadLectureCrp304'
-import UploadLectureCrp511 from './Admin/Uploads/UploadLectureCrp511'
-import UploadLectureCrp405 from './Admin/Uploads/UploadLectureCrp405'
-import UploadLectureCrp305 from './Admin/Uploads/UploadLectureCrp305'
-import UploadLectureCrp512 from './Admin/Uploads/UploadLectureCrp512'
-import UploadLectureCpt503 from './Admin/Uploads/UploadLectureCpt503'
-           
+               // Header
+import Navbar from './Client/Header/Navbar'
+               //  Homepage
+import Home from './Client/HomePage/Home'
                // View Lecture
-import ViewHome from './Admin/ViewLecture/VeiwHome'
-import LectureDetails from './Admin/ViewLecture/LectureDetails'
-import ViewCrp304 from './Admin/ViewLecture/ViewCrp304'
-import ViewCrp305 from './Admin/ViewLecture/ViewCrp305'
-import ViewCrp405 from './Admin/ViewLecture/ViewCrp405'
-import ViewCrp511 from './Admin/ViewLecture/ViewCrp511'
-import ViewCrp512 from './Admin/ViewLecture/ViewCrp512'
-import ViewCpt503 from './Admin/ViewLecture/ViewCpt503'
+import ViewHome from './Client/ViewLecture/VeiwHome'
+import ViewCrp304 from './Client/ViewLecture/ViewCrp304'
+import ViewCrp305 from './Client/ViewLecture/ViewCrp305'
+import ViewCrp405 from './Client/ViewLecture/ViewCrp405'
+import ViewCrp511 from './Client/ViewLecture/ViewCrp511'
+import ViewCrp512 from './Client/ViewLecture/ViewCrp512'
+import ViewCpt503 from './Client/ViewLecture/ViewCpt503'
+import LectureDetails from './Client/ViewLecture/LectureDetails'
+                //  Contact
+import Contact from './Client/Contact/Contact'
+                 // Footer
+import Footer from './Client/Footer/Footer'
+                // Axios
 import axios from 'axios'
-import Footer from './Admin/Footer/Footer'
-
 
 
 function App() {
@@ -121,46 +115,22 @@ function App() {
 
     <Router>
             <Navbar/>
-       
          <Routes>
+                                {/* Home Route */}
+               <Route path = "/" exact element= {<Home/>}></Route>
 
-           {/* Home Page Routes */}
-               <Route path = "/" exact element= {
-               <Home LectureListCRP304={LectureListCRP304} 
-               loading={loading} 
-               LectureListCRP305={LectureListCRP305}
-               LectureListCRP405={LectureListCRP405} 
-               LectureListCRP511={LectureListCRP511} 
-               LectureListCRP512={LectureListCRP512}
-               LectureListCPT503={LectureListCPT503} />}> 
-               </Route>
-
-                              {/* Upload Lecture Routes */}
-               <Route path = "/Upload" exact element= {<Upload/>}></Route>
-               <Route path = "/upload/Upload-304" exact element= {<UploadLectureCrp304/>}></Route>
-               <Route path = "/upload/Upload-305" exact element= {<UploadLectureCrp305/>}></Route>
-               <Route path = "/upload/Upload-405" exact element= {<UploadLectureCrp405/>}></Route>
-               <Route path = "/upload/Upload-511" exact element= {<UploadLectureCrp511/>}></Route>
-               <Route path = "/upload/Upload-503" exact element= {<UploadLectureCpt503/>}></Route>
-               <Route path = "/upload/Upload-512" exact element= {<UploadLectureCrp512/>}></Route>
-
-                              {/* View lecture */}
+                                {/* View lecture Routes */}
                <Route path = "/view" exact element= {<ViewHome/>}></Route>
                <Route path = "view/view-304" exact element= {<ViewCrp304 LectureListCRP304={LectureListCRP304} loading={loading}/> }></Route>
-               <Route path = "view/View-305" exact element= {<ViewCrp305 LectureListCRP305={LectureListCRP305} loading={loading}/>}></Route>
-               <Route path = "view/View-405" exact element= {<ViewCrp405 LectureListCRP405={LectureListCRP405} loading={loading}/>}></Route>
-               <Route path = "view/View-511" exact element= {<ViewCrp511 LectureListCRP511={LectureListCRP511} loading={loading}/>}></Route>
-               <Route path = "view/View-512" exact element= {<ViewCrp512 LectureListCRP512={LectureListCRP512} loading={loading}/>}></Route>
-               <Route path = "view/View-503" exact element= {<ViewCpt503 LectureListCPT503={LectureListCPT503} loading={loading}/>}></Route>
+               <Route path = "view/view-305" exact element= {<ViewCrp305 LectureListCRP305={LectureListCRP305} loading={loading}/>}></Route>
+               <Route path = "view/view-405" exact element= {<ViewCrp405 LectureListCRP405={LectureListCRP405} loading={loading}/>}></Route>
+               <Route path = "view/view-511" exact element= {<ViewCrp511 LectureListCRP511={LectureListCRP511} loading={loading}/>}></Route>
+               <Route path = "view/view-512" exact element= {<ViewCrp512 LectureListCRP512={LectureListCRP512} loading={loading}/>}></Route>
+               <Route path = "view/view-503" exact element= {<ViewCpt503 LectureListCPT503={LectureListCPT503} loading={loading}/>}></Route>
                <Route path = "/lecturedetails/:id" exact element= {<LectureDetails/>}></Route>
-
-
-                       
-
-
-
-
-               
+                                   
+                                     {/* Contact Route */}
+               <Route path = "/contact" exact element= {<Contact/>}></Route>
          </Routes>
        <Footer/>
          </Router> 
