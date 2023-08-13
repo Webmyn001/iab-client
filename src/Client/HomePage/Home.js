@@ -106,7 +106,7 @@ function Home() {
             autoStart:true,
             loop:false,
             delay:50,
-            strings:"jhiooi  eifh eiufei f eufh efh  aF  kgf a a FYAF A FB A  SUGF  fiug af  fag fdah afg  asfg fa  fasgf afga fjg s  jg aghf  ay f  sfg h a  shg fr g fasgfg fs f hsgfsf g sgfgdsyf fvffsgf a sdfhafiu fahywhrh aui fgffhv  fgdfgg ahf g gsafhfgLHF V AIVBSAhhv"
+            strings:"Olufemi Sunday SOSANYA (PhD) is a Nematologist of repute. A member of NISON (Nigerian Society of Nematologists). He has been handling undergraduate and postgraduate courses in plant pathology, soil borne and root diseases , plant diseases control and crop protection in the Department of Crop Production, Olabisi Onabanjo University, College of Agricultural Sciences Ayetoro Campus, Ogun State."
           }}
           />
             
