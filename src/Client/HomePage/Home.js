@@ -99,7 +99,7 @@ function Home() {
           <img src={DrImg} className="rounded-full h-[300px] w-[300px] object-cover " data-aos="fade-right" alt='ef'/>
           </div>
        {/* text */}
-        <div className='max-w-[300px] px-3 py-4 h-[250px] font-josefins sm:max-w-[500px]'>
+        <div className='max-w-[300px] px-3 py-4 h-fit text-indigo-800 font-josefins sm:max-w-[500px]'>
       <h3>
           <Typewriter 
           options={{
