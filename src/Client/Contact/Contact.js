@@ -29,7 +29,7 @@ function Contact() {
         </div>
         <h1 className=' text-center text-xs px-2 pt-4'>Cick on any of the following link below to contact us for more information.</h1>
       <div className='pt-[10px] '>
-        <a href='https://wa.me/8058871710'>
+        <a href='https://wa.me/+2348058871710'>
         <div className='flex items-center px-4 pt-2  gap-x-2'>
           <h1 className='text-[#128c7e] text-xl'><IoLogoWhatsapp/></h1>
           <h1>Whatsapp</h1>
