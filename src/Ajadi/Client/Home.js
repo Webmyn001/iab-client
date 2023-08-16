@@ -192,15 +192,19 @@ function Home() {
                     
                 </select>
 
-
-<input placeholder='Age' type="Number"  value={Age} onChange={OnchangeAge} required
-        className='w-full border-b-[1px] px-3 focus:outline-0 rounded-md text-[14px] pb-[3.5px] mt-[20px] border-[#a4cb3c] '/>
-
 <h3 className='text-xs pt-[25px] text-center'>Kindly include your country code e.g +2348139116879</h3>
 <input placeholder='Whatsapp Number e.g +2348139116879'  maxLength={14} value={WhatsappNo} onChange={OnchangeWhatsapp} required
-        className='w-full border-b-[1px] px-3 focus:outline-0 rounded-md text-[14px] pb-[3.5px] mt-[10px] border-[#a4cb3c] '/>
+        className='w-full border-b-[1px] px-3 focus:outline-0 rounded-md text-[14px] pb-[3.5px] mb-[30px] mt-[10px] border-[#a4cb3c] '/>
 
+           <label for="Sex" className="font-semibold text-[14px]">Age Range :</label>
+                <select name="Sex" onChange={OnchangeAge} className=" focus:outline-0  px-3  " >
+                   <option value={false} className ="disabled:" >Select</option>
+                    <option value="15-20" className="">15-20</option>
+                    <option value="20-30" className="">20-30</option>
+                    <option value="30-40" className="">30-40</option>
 
+                    
+                </select>
 <input placeholder='Phone Number' type="Number" value={PhoneNo} onChange={OnchangePhoneNo} required
         className='w-full border-b-[1px] px-3 focus:outline-0 text-[14px] rounded-md pb-[3.5px] mt-[20px] border-[#a4cb3c] '/>
 
