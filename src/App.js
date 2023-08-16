@@ -1,10 +1,9 @@
 import React from 'react'
 import {BrowserRouter as Router , Route, Routes, } from "react-router-dom";
-import Footer from './Ajadi/Admin/Footer/Footer'
-import Navbar from './Ajadi/Admin/header/Navbar'
-import Admin from './Ajadi/Admin/Admin';
-import Details from './Ajadi/Admin/Details';
-import IDcardAdmin from './Ajadi/Admin/IDcardAdmin';
+import Contact from './Ajadi/Client/Contact'
+import Home from './Ajadi/Client/Home'
+import Footer from './Ajadi/Client/Footer/Footer'
+import Navbar from './Ajadi/Client/header/Navbar'
 
 
 
@@ -14,22 +13,12 @@ function App() {
  
   return (
     <div className='font-josefins bg-[#f5f5f5]'>
-       <Router>
-            <Navbar/>
        
+       <Router>
+    <Navbar/>
          <Routes>
-               {/* Admin */}
-               <Route path = "/" exact element= {<Admin/>}></Route>
-               <Route path = "/details/:id" exact element= {<Details/>}></Route>
-               <Route path = "/Idcard/:id" exact element= {<IDcardAdmin />}></Route>
-
-
-
-
-
-
-
-               
+               <Route path = "/" exact element= {<Home/>}></Route>
+               <Route path = "/contact" exact element= {<Contact/>}></Route>
          </Routes>
        <Footer/>
          </Router> 

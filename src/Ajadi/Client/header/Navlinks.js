@@ -8,13 +8,10 @@ import {Link} from "react-router-dom";
         {name: "Home",
          link : "/"
         },
-        {name: "Admin",
-        link : "/Admin"
-       },
-
-       {name: "Contact us",
-       link : "/contact"
-      },
+        {
+            name: "Contact us",
+            link : "/contact"
+          },
        
         
         
