@@ -19,7 +19,7 @@ function App() {
        
          <Routes>
                {/* Admin */}
-               <Route path = "/Admin" exact element= {<Admin/>}></Route>
+               <Route path = "/" exact element= {<Admin/>}></Route>
                <Route path = "/details/:id" exact element= {<Details/>}></Route>
 
                <Route path = "/Idcard/:id" exact element= {<IDcardAdmin />}></Route>
