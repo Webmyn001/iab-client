@@ -127,7 +127,7 @@ function Home() {
   return (
     <div  className='bg-[#f5f5f5] pb-[60px] text-[#1a456e] w-full min-h-screen'>
       {/* Heading */}
-    <h1 className='text-center font-semibold font-montserat bg-gradient-to-r text-white from-[#1a456e] mt-2 to-[#a4cb3c] py-[2px]'>Ajadi Muslim Youth Forum</h1>
+    <h1 className='text-center font-semibold font-montserat bg-gradient-to-r text-white from-[#1a456e] mt-2 to-[#a4cb3c] py-[2px]'>Ajadi-Enukoko Muslim Youth Forum</h1>
                 
              <div className=' text-center  my-[20px] '>
                     <h1 className='font-medium text-[15px] '>Kindly complete the form below to register as a member of the Organization.</h1>

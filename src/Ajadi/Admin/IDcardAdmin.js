@@ -25,7 +25,7 @@ function IDcardAdmin() {
         <div className='border-transparent border-[0.2px] 
         bg-gradient-to-r text-white from-[#1a456e]  to-[#a4cb3c]
        rounded-2xl shadow-xl shadow-indigo-800/50  w-[350px] pb-4' data-aos="zoom-in">
-            <h1 className='text-center border-b border-white'>Ajadi Muslim Community Youth Forum</h1>
+            <h1 className='text-center border-b font-semi-bold text-[14px] border-white'>Ajadi-Enukoko Muslim Community Youth Forum</h1>
        
     
      
@@ -39,11 +39,11 @@ function IDcardAdmin() {
              {/* text */}
              <div className='max-w-[250px] px-1 text-xs'>
              <h2 className='pt-2 font-bold text-[14px]'>{data.Name}</h2>
-             <h2>Occupation: {data.Occupation}</h2>
-             <h2>Qualification: {data.Qualification}</h2>
-             <h2>Status: {data.Status}</h2>
-             <h2>Address: {data.Address}</h2>
-             <h2>Telephone No: {data.PhoneNo}</h2>
+             <h2><span className='font-semibold'>Occupation:</span>{data.Occupation}</h2>
+             <h2><span className='font-semibold'>Qualification:</span>{data.Qualification}</h2>
+             <h2><span className='font-semibold'>Status:</span>{data.Status}</h2>
+             <h2><span className='font-semibold'>Address:</span>{data.Address}</h2>
+             <h2><span className='font-semibold'>Telephone No:</span>{data.PhoneNo}</h2>
 
              </div>
        </div> 

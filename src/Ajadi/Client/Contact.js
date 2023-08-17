@@ -32,23 +32,46 @@ function Contact() {
         <a href='https://wa.me/+2347064989803'>
         <div className='flex items-center px-4 pt-2  gap-x-2'>
           <h1 className='text-[#128c7e] text-xl'><IoLogoWhatsapp/></h1>
-          <h1>Whatsapp</h1>
+          <h1>Whatsapp - Amir</h1>
         </div>
         </a>
 
-        <a href="mailto:bellooladimeji53@gmail.com">
+        <a href='https://wa.me/+2348054479555'>
+        <div className='flex items-center px-4 pt-2  gap-x-2'>
+          <h1 className='text-[#128c7e] text-xl'><IoLogoWhatsapp/></h1>
+          <h1>Whatsapp - Naibul-Amir</h1>
+        </div>
+        </a>
+
+        <a href="mailto:nasirudeenidris@gmail.com">
         <div className='flex items-center px-4 pt-2 gap-x-2'>
           <h1 className='text-[#c71610] text-xl'><AiOutlineMail/></h1>
-          <h1>Bellooladimeji2019@gmail.com</h1>
+          <h1>nasirudeenidris@gmail.com</h1>
         </div>
        </a>
 
-      <a href='tel:+2348139116879'>
-        <div className='flex items-center px-4 pt-2 pb-2 gap-x-2'>
-          <h1 className='text-[#0ebe2c] text-xl'><BsFillTelephoneFill/></h1>
-          <h1>Telephone Number : 08139116879</h1>
+       <a href="mailto:abdulrasaqkamil@gmail.com">
+        <div className='flex items-center px-4 pt-2 gap-x-2'>
+          <h1 className='text-[#c71610] text-xl'><AiOutlineMail/></h1>
+          <h1>abdulrasaqkamil@gmail.com</h1>
         </div>
        </a>
+
+       <a href='tel:+23407064989803'>
+        <div className='flex items-center px-4 pt-2 pb-2 gap-x-2'>
+          <h1 className='text-[#0ebe2c] text-xl'><BsFillTelephoneFill/></h1>
+          <h1>Telephone Number (Amir): 07064989803</h1>
+        </div>
+       </a>
+
+       <a href='tel:+2348054479555'>
+        <div className='flex items-center px-4 pt-2 pb-2 gap-x-2'>
+          <h1 className='text-[#0ebe2c] text-xl'><BsFillTelephoneFill/></h1>
+          <h1>Telephone Number (Naibu-l-Amir): 08054479555</h1>
+        </div>
+       </a>
+
+      
 
       </div>
       
