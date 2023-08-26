@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React, { useState } from 'react'
+import { Oval } from 'react-loader-spinner'
 import { useNavigate } from 'react-router-dom'
 import Button from './Button'
 
@@ -78,6 +79,8 @@ function Home() {
     setWhatsappNo(e.target.value)
   }
 
+  const [Loading, setLoading] = useState(false);
+
   const Onchangeimages = async (e) => { 
     const files = Array.from(e.target.files)
     console.log(e.target.files.length)  
@@ -104,20 +107,23 @@ function Home() {
   }
 
   const saveForm = async (e) => {
+    setLoading(true)
     e.preventDefault();
      axios.post("https://calm-pink-fossa-wear.cyclic.cloud/api/ajadi-form/add",{Name,Occupation,School,
      Class, Image, Status,WhatsappNo,Sex,
      Address, Location, Email, PhoneNo, Age, Qualification})
     .then((res)=>
-    { 
+    {
     console.log("saved succesfully")
     navigate("/");
     window.location.reload() 
-    alert("Thank you! Response recieved,We will get back to you on Whatsapp.")
-
-  }).catch((err)=> {
+    alert("Thank you! Response recieved, We will get back to you on Whatsapp.")
+   })
+   .catch((err)=> {
       console.log(err)
-      alert("Unable to submit form, kindly complete the form.")
+      alert("Unable to submit form, kindly complete the form and ensure you are connected to the Internet.")
+   setLoading(false)
+
     })
     
     
@@ -200,8 +206,8 @@ function Home() {
                 <select name="Sex" onChange={OnchangeAge} className=" focus:outline-0  px-3  " >
                    <option value={false} className ="disabled:" >Select</option>
                     <option value="15-20" className="">15-20</option>
-                    <option value="20-30" className="">20-30</option>
-                    <option value="30-40" className="">30-40</option>
+                    <option value="21-30" className="">21-30</option>
+                    <option value="31-40" className="">31-40</option>
 
                     
                 </select>
@@ -213,7 +219,7 @@ function Home() {
     
      {/* Upload button */}
      <div className='flex justify-center items-center mb-2'>
-        <Button name="Submit"/>
+        {Loading ? <div className='pt-5 pb-2'><Oval height="30" width="30" radius="4" color="#1a456e" ariaLabel="loading"/> </div> : <Button name="Submit"/>}
      </div>
   </form>
 

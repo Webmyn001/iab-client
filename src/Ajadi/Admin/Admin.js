@@ -1,9 +1,7 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
-import { BsFillArrowRightCircleFill } from 'react-icons/bs'
-import { Oval, TailSpin } from 'react-loader-spinner'
+import { Oval } from 'react-loader-spinner'
 import { Link } from 'react-router-dom'
-import image1 from "./Images/genetics.jpg"
 
 function Admin() {
  
@@ -37,7 +35,7 @@ const [FormData, SetFormData] = useState([])
         {/* table */}
 
 
-  {loading ? <div></div>:<div className="flex min-h-screen justify-center items-center text-xl font-bold"><Oval height="80" width="80" radius="9" color="#a4cb3c" ariaLabel="loading"/></div>}
+  {loading ? <div></div>:<div className="flex min-h-screen justify-center items-center text-xl font-bold"><Oval height="80" width="80" radius="9" color="#1a456e" ariaLabel="loading"/></div>}
   
   { FormData.length === 0 ? 
           <div className={`min-h-screen  flex ${loading ? "block" : "hidden"} font-montserat text-xl font-semibold justify-center items-center`}>  This List is Empty</div>  :
