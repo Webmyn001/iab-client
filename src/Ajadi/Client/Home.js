@@ -123,7 +123,6 @@ function Home() {
       console.log(err)
       alert("Unable to submit form, kindly complete the form and ensure you are connected to the Internet.")
    setLoading(false)
-
     })
     
     
