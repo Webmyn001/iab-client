@@ -1,32 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import {BrowserRouter as Router ,Route, Routes, } from "react-router-dom"
 
-import Navbar from './IAB/Client/header/Navbar'
-import axios from 'axios'
-import Footer from './IAB/Client/Footer/Footer'
-import Homepage from './IAB/Client/Homepage'
-import Contact from './IAB/Client/Contact'
+import Navbar from './IAB/Admin/header/Navbar'
+import Footer from './IAB/Admin/Footer/Footer'
+import Homepage from './IAB/Admin/Homepage'
 
 
 function App() {
-  const [Lecture, setLecture] =useState([])
-  const [loading, setLoading] = useState(false)
-
-  const getLecture = async  () => {
-     axios.get("https://red-muddy-gecko.cyclic.app/api/mssnoau/iab/")
-     .then(res => {
-       console.log(res.data)
-       setLecture(res.data)
-       setLoading(true)
-     }).catch(err => {
-       console.log(err)
-     })
-    }
-
-useEffect(() => {
-     getLecture()
-     }, [])
-
 
      
   return (
@@ -37,9 +17,12 @@ useEffect(() => {
        
          <Routes>
 
-            {/* Client */}
-            <Route path = "/" exact element= {<Homepage Lecture={Lecture} loading={loading}/>}></Route>
-               <Route path = "/contact" exact element= {<Contact/>}></Route>
+           {/* Admin */}
+           
+               <Route path = "/" exact element= {<Homepage />}></Route>
+                   
+                   {/* List to delete */}
+
          </Routes>
        <Footer/>
          </Router> 
