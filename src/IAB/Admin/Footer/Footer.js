@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import {AiOutlineCopyright} from "react-icons/ai"
-import { IoLogoWhatsapp } from 'react-icons/io'
 
 
 function Footer() {

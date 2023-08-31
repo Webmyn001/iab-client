@@ -10,7 +10,7 @@ import Contact from './IAB/Client/Contact'
 
 function App() {
   const [Lecture, setLecture] =useState([])
-  const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState([])
 
   const getLecture = async  () => {
      axios.get("https://red-muddy-gecko.cyclic.app/api/mssnoau/iab/")

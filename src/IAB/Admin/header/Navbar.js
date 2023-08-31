@@ -1,7 +1,9 @@
 import React from "react"
 import {  useState } from "react"
 import { Link } from "react-router-dom";
-import image1 from "../Images/ajadi-logo.jpg"
+import image1 from "../Images/mssn-logo1.png"
+import image2 from "../Images/oau-logo.png"
+
 
 
 
@@ -20,8 +22,10 @@ import {FaBars,FaTimes} from "react-icons/fa"
             {/* logo */}
             <div>
             <Link to="/"> 
-              <div className="pl-4 pt-2">
-              <img src={image1} alt="logo" className="h-[55px] w-[55px] p-1 border border-[#1a456e] cursor-pointer rounded-lg"/>
+              <div className="pl-2 flex pt-2 items-center justify-start">
+              <img src={image1} alt="logo" className="h-[50px] w-[50px] p-1  cursor-pointer rounded-lg"/>
+              <img src={image2} alt="logo" className="h-[50px] w-[50px]  p-1  cursor-pointer rounded-lg"/>
+
                 </div>   
                </Link> 
              </div>

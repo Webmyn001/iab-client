@@ -8,15 +8,9 @@ import {Link} from "react-router-dom";
         {name: "Home",
          link : "/"
         },
-        {
-            name: "Contact us",
-            link : "/contact"
-          },
-       
-        
-        
-        
-       
+       {name: "Contact us",
+       link : "/contact"
+      },
        
     ]
     return(
