@@ -13,7 +13,7 @@ function App() {
   const [loading, setLoading] = useState(false)
 
   const getLecture = async  () => {
-     axios.get("https://red-muddy-gecko.cyclic.app/api/mssnoau/iab/")
+     axios.get("https://naughty-wasp-umbrella.cyclic.app/api/mssnoau/iab/")
      .then(res => {
        console.log(res.data)
        setLecture(res.data)
