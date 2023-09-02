@@ -8,7 +8,7 @@ import {Link} from "react-router-dom";
         {name: "Home",
          link : "/"
         },
-       {name: "",
+       {name: "Reminder Lists",
        link : "/list"
       },
        
