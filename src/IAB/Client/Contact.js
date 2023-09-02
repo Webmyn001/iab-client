@@ -17,7 +17,7 @@ function Contact() {
 
 
   return (
-    <div className='bg-[#f5f5f5]  text-[#1a456e]'>
+    <div className='bg-[#f5f5f5]  text-[#140a22]'>
       <div className='p-4 text-center bg-white flex mt-2  items-center justify-center  h-[100px] rounded-b-full shadow-xl shadow-indigo-800/50'></div>
     
       <div className='pt-[25px]'></div>
@@ -30,31 +30,26 @@ function Contact() {
         </div>
         <h1 className=' text-center text-xs px-2 pt-4'>Cick on any of the following link below to contact us for more information.</h1>
       <div className='pt-[10px] '>
-        <a href='https://wa.me/+2349039052468'>
+        <a href='https://wa.me/+2347032584459'>
         <div className='flex items-center px-4 pt-2  gap-x-2'>
           <h1 className='text-[#128c7e] text-xl'><IoLogoWhatsapp/></h1>
-          <h1>Whatsapp - Amir</h1>
+          <h1>Whatsapp</h1>
         </div>
         </a>
 
-        <a href="mailto:sample@gmail.com">
+        <a href="mailto:alqurraaschool@gmail.com">
         <div className='flex items-center px-4 pt-2 gap-x-2'>
           <h1 className='text-[#c71610] text-xl'><AiOutlineMail/></h1>
-          <h1>sample.gmail.com</h1>
+          <h1>alqurraaschool@gmail.com</h1>
         </div>
        </a>
 
-       <a href="mailto:sample@gmail.com">
-        <div className='flex items-center px-4 pt-2 gap-x-2'>
-          <h1 className='text-[#c71610] text-xl'><AiOutlineMail/></h1>
-          <h1>sample@gmail.com</h1>
-        </div>
-       </a>
+      
 
-       <a href='tel:+2347064989803'>
+       <a href='tel:+2347032584459'>
         <div className='flex items-center px-4 pt-2 pb-2 gap-x-2'>
           <h1 className='text-[#0ebe2c] text-xl'><BsFillTelephoneFill/></h1>
-          <h1>Telephone Number: 08139116879</h1>
+          <h1>Telephone Number: 07032584459</h1>
         </div>
        </a>
 

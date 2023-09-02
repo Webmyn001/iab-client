@@ -1,8 +1,7 @@
 import React from "react"
 import {  useState } from "react"
 import { Link } from "react-router-dom";
-import image1 from "../Images/mssn-logo1.png"
-import image2 from "../Images/oau-logo.png"
+import image1 from "../Images/Alquraa.jpg"
 
 
 
@@ -18,13 +17,12 @@ import {FaBars,FaTimes} from "react-icons/fa"
         <div>
             
                      {/* large screen */}
-          <div className="bg-[#f5f5f5] flex px- text-[#1a456e] h-[60px]">
+          <div className="bg-[#f5f5f5] flex px-  text-[#140a22] h-[60px]">
             {/* logo */}
             <div>
             <Link to="/"> 
               <div className="pl-2 flex pt-2 items-center justify-start">
-              <img src={image1} alt="logo" className="h-[50px] w-[50px] p-1  cursor-pointer rounded-lg"/>
-              <img src={image2} alt="logo" className="h-[50px] w-[50px]  p-1  cursor-pointer rounded-lg"/>
+              <img src={image1} alt="logo" className="h-[50px] w-[50px] p-1  cursor-pointer rounded-xl"/>
 
                 </div>   
                </Link> 
@@ -45,7 +43,7 @@ import {FaBars,FaTimes} from "react-icons/fa"
                   </ul>
            
                              {/* toggling icon */}
-                  <div className="z-50 md:hidden text-[#1a456e] cursor-pointer pr-8 flex w-full justify-end items-center" 
+                  <div className="z-50 md:hidden  text-[#140a22] cursor-pointer pr-8 flex w-full justify-end items-center" 
                    onClick={handleClick}>
                     {open ? <FaTimes/> : <FaBars/>}
                   </div>
