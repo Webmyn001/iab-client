@@ -40,7 +40,7 @@ function Homepage(props) {
           <h3 className='text-[15px] sm:text-base '>Posted :{info.date}</h3>
         </div>
 
-                <img src={info.Image[0].url} alt={info.Title} className="rounded-xl shadow-2xl  w-[350px] h-[410px] sm:w-[400px] sm:h-[450px] object-cover" data-aos="zoom-in"/>
+                <img src={info.Image[0].url} alt={info.Title} className="rounded-xl shadow-2xl  w-[350px] h-[410px] sm:w-[400px] sm:h-[450px] object-fit" data-aos="zoom-in"/>
 
                 <h1 className='p-3 text-xl  font-bold pt-10'>{info.Title}</h1>
                 <h1 className='p-3 font-medium' data-aos="fade-left">{info.Description}</h1>
