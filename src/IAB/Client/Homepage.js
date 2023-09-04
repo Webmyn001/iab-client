@@ -39,7 +39,7 @@ function Homepage(props) {
             
           <div  key={i}>
 
-            <h1 className='bg-[#140a22] h-[2px] pt-2 w-full'>.</h1>
+            <h1 className='bg-[#140a22] h-[2px]  w-full'>.</h1>
          <div className='flex flex-col justify-start w-full p-4 sm:justify-center sm:items-center'>
           <h3 className='text-xs sm:text-base font-bold '>Posted :{info.date}</h3>
         </div>
