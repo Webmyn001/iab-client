@@ -39,7 +39,7 @@ useEffect(() => {
            {/* Admin */}
            
                <Route path = "/" exact element= {<Homepage />}></Route>
-               <Route path = "/list" exact element= {<List Lecture={Lecture} getLecture={getLecture} />}></Route>
+               <Route path = "/list" exact element= {<List Lecture={Lecture} Loading={Loading} getLecture={getLecture} />}></Route>
 
                    
                    {/* List to delete */}
