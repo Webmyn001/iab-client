@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import Button from './Button';
 import { Oval } from 'react-loader-spinner'
 
+
 function Homepage() {
 
     const navigate = useNavigate();
@@ -85,9 +86,8 @@ function Homepage() {
 
 
   return (
-    <div className='min-h-[900px] text-[#140a22]'>
-    <h1 className='text-center font-semibold font-montserat bg-gradient-to-r  from-[#f9f295]  to-[#e0aa3e] mt-2 py-[2px]'>Al-Qurraa' Schools, Ibadan.</h1>
-    <h1 className='text-center font-bold text-xl font-josefins pt-4 '>Admin Page</h1>
+    <div className='min-h-screen text-[#140a22]'>
+    <h1 className='text-center font-semibold font-montserat bg-gradient-to-r  from-[#f9f295]  to-[#e0aa3e] mt-1 py-[3px]'>Al-Qurraa' Schools, Ibadan.  (Admin Page)</h1>
 
 <div className='flex justify-center h-[700px] items-center '>
     <div className="flex flex-col shadow-lg w-[320px] h-fit border-2 border-[#140a22] bg-white items-center rounded-[32px]">
@@ -109,7 +109,7 @@ function Homepage() {
 
      {/* Upload button */}
      <div className='flex justify-center items-center mb-2'>
-        {Loading ? <div className='pt-5 pb-2'><Oval height="30" width="30" radius="4" color="#140a22" ariaLabel="loading"/> </div> : <Button name="Submit"/>}
+        {Loading ? <div className='pt-5 pb-2'><Oval height="30" width="30" radius="4" color="#140a22" ariaLabel="loading"/> </div> : <Button name="Upload"/>}
      </div>
   </form>
     </div>

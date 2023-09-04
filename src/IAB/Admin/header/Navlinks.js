@@ -5,10 +5,10 @@ import {Link} from "react-router-dom";
  function Navlinks (props) {
 
     const Links = [
-        {name: "Home",
+        {name: "HomePage",
          link : "/"
         },
-       {name: "Reminder Lists",
+       {name: "Reminder List",
        link : "/list"
       },
        
