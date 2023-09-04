@@ -48,7 +48,7 @@ function Homepage(props) {
                 <img src={info.Image[0].url} alt={info.Title} className="rounded-xl shadow-2xl  w-[300px] h-[350px] sm:w-[350px] sm:h-[400px] object-fit" data-aos="zoom-in"/>
           </div>
                 <h1 className='px-3 text-xl text-center font-bold pt-5'>{info.Title}</h1>
-                <h1 className='px-3  text-center pt-1 font-medium' data-aos="fade-left">{info.Description}</h1>
+                <h1 className='px-3  text-center pt-1 font-semibold' data-aos="fade-left">{info.Description}</h1>
                
         
        </div>
