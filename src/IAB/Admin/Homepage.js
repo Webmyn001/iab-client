@@ -86,10 +86,10 @@ function Homepage() {
 
 
   return (
-    <div className='min-h-screen text-[#140a22]'>
+    <div className=' text-[#140a22]'>
     <h1 className='text-center font-semibold font-montserat bg-gradient-to-r  from-[#f9f295]  to-[#e0aa3e] mt-1 py-[3px]'>Al-Qurraa' Schools, Ibadan.  (Admin Page)</h1>
 
-<div className='flex justify-center h-[700px] items-center '>
+<div className='flex justify-center min-h-screen  items-center '>
     <div className="flex flex-col shadow-lg w-[320px] h-fit border-2 border-[#140a22] bg-white items-center rounded-[32px]">
 
     <form className='w-[280px] mt-[30.5px]' onSubmit={saveForm} encType="multipart/form-data">

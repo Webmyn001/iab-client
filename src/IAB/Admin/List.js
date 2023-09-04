@@ -44,8 +44,8 @@ useEffect(()=> {
 
                             <img src={info.Image[0].url}
                              alt={info.Title} className='rounded-lg object-fit h-[300px] shadow-2xl w-[300px] md:w-[350px]' />
-                            <h1 className="text-xl font-bold px-4 pt-1 pb-0 mt-1">  {info.Title} </h1>
-                            <h1 className="text-xl font-bold px-4 pt-1 pb-0 mt-1">  {info.Description} </h1>
+                            <h1 className="text-[14px] font-bold px-4 pt-2 pb-0 ">  {info.Title} </h1>
+                            <h1 className="text-[14px] font-bold px-4 pb-0">  {info.Description} </h1>
 
                               
                         <div className="flex px-8  pb-2 text-[#140a22] font-semibold w-full items-center justify-end">
