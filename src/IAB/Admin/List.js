@@ -30,7 +30,7 @@ useEffect(()=> {
 
   return (
     <div className='min-h-[900px] text-[#140a22]' >
-    <h1 className='text-center font-semibold font-montserat bg-gradient-to-r  from-[#f9f295]  to-[#e0aa3e] mt-2 py-[2px]'>Al-Qurraa' Schools, Ibadan.</h1>
+    <h1 className='text-center font-semibold font-montserat bg-gradient-to-r  from-[#f9f295]  to-[#e0aa3e] mt-1 py-[3px]'>Al-Qurraa' Schools, Ibadan.  (Admin Page)</h1>
      
     {props.Loading ? <div></div>:<div className="flex min-h-screen justify-center items-center text-xl font-bold"><Rings height="100" width="100" radius="50" color="#140a22" ariaLabel="loading"/></div>}
     
@@ -48,9 +48,9 @@ useEffect(()=> {
                             <h1 className="text-[14px] font-bold px-4 pb-0">  {info.Description} </h1>
 
                               
-                        <div className="flex px-8  pb-2 text-[#140a22] font-semibold w-full items-center justify-end">
+                        <div className="flex px-8  pb-2 pt-2 text-[#140a22] font-semibold w-full items-center justify-end">
                               <button onClick={()=>deleteUser(info._id)}
-                              className="bg-[#f32013] text-base sm:text-xl text-white rounded-md px-2 py-1">Delete</button>
+                              className="bg-[#f32013] text-base sm:text-xl text-white rounded-md px-1 py-1">Delete</button>
                         </div>   
                             </div>
                         </div>
