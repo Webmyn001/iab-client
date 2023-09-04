@@ -98,7 +98,7 @@ function Homepage() {
     <input placeholder='Topic or Title'  value={Title} onChange={OnchangeTitle} 
       className='w-full border-b-[1px] shadow-md rounded-md focus:outline-0 text-[14px] pb-[3.5px] pl-3 border-[#140a22] mb-4 text-[#140a22] '/>
 
-    <textarea placeholder='Conclusion'  value={Description} onChange={OnchangeDescription}
+    <textarea placeholder='Description'  value={Description} onChange={OnchangeDescription}
       className='w-full border-b-[1px] shadow-md h-[70px] rounded-md focus:outline-0 text-[14px] pb-[3.5px] pl-3 border-[#140a22] text-[#140a22] mt-[24px]'/>
 
 
