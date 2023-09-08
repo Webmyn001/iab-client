@@ -103,7 +103,7 @@ function Homepage() {
       className='w-full border-b-[1px] shadow-md h-[70px] rounded-md focus:outline-0 text-[14px] pb-[3.5px] pl-3 border-[#140a22] text-[#140a22] mt-[24px]'/>
 
 
-    <h3 className='text-xs pt-5 text-[#140a22] text-center'>kindly upload Document only below (Max 5mb)</h3>
+    <h3 className='text-xs pt-5 text-[#140a22] text-center'>kindly upload Images only (Max 5mb)</h3>
    <input  type="file"  name='document' onChange={Onchangeimages}
       className='w-full border-b-[1px] shadow-md focus:outline-0 text-[14px] rounded-md pb-[3.5px] pl-3  border-[#140a22]  mt-[12px]' required />
 
