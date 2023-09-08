@@ -35,7 +35,7 @@ function Homepage(props) {
        
        { LatestLecture.map((info,i) => (
              LatestLecture.length === 0 ? 
-               <div className={`min-h-screen  flex ${props.loading ? "block" : "hidden"} font-montserat font-bold text-2xl font-semibold justify-center items-center`}> Oops!!! There is No Lecture Available.</div>  :
+               <div className={`min-h-screen  flex ${props.loading ? "block" : "hidden"} font-montserat font-bold text-2xl  justify-center items-center`}> Oops!!! There is No Lecture Available.</div>  :
             
                <div  key={i} className="flex items-center justify-center">
                <div  className="flex  bg-gradient-to-b  from-[#f3e1c1] to-[#fefbe9] flex-col rounded-lg items-center justify-center w-[300px] md:w-[350px]  shadow-2xl my-8 " data-aos="zoom-in">
@@ -45,7 +45,7 @@ function Homepage(props) {
                <h1 className="text-[14px] font-bold px-4 pt-2 pb-0 ">  {info.Title} </h1>
                <h1 className="text-[14px] font-semibold pt-1 px-4 pb-0">  {info.Description} </h1>
 
-                 <h3 className='text-xs px-4 pt-2 font-bold'>Posted : {info.date}</h3>
+                 <h3 className='text-[10px] px-4 pb-1 pt-2 font-bold'>Posted : {info.date}</h3>
           
                </div>
            </div>
