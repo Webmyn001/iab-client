@@ -42,10 +42,10 @@ function Homepage(props) {
 
                <img src={info.Image[0].url}
                 alt={info.Title} className='rounded-lg object-fit h-[350px] shadow-2xl w-[300px] md:w-[350px] md:h-[400px]' />
-               <h1 className="text-[14px] font-bold px-4 pt-2 pb-0 ">  {info.Title} </h1>
-               <h1 className="text-[14px] font-semibold pt-1 px-4 pb-0">  {info.Description} </h1>
+               <h1 className="text-[15px] font-bold px-4 pt-3 pb-0 ">  {info.Title} </h1>
+               <h1 className="text-[14px] font-medium pt-2 px-4 pb-1">  {info.Description} </h1>
 
-                 <h3 className='text-[10px] px-4 pb-1 pt-2 font-bold'>Posted : {info.date}</h3>
+                 <h3 className='text-[10px] px-4 pb-1 pt-2 font-semibold'>Posted : {info.date}</h3>
           
                </div>
            </div>
