@@ -24,7 +24,7 @@ function Homepage(props) {
   return (
     <div className='text-[#140a22]'>
     <h1 className='text-center font-semibold font-montserat bg-gradient-to-r  from-[#f9f295]  to-[#e0aa3e] mt-2 py-[2px]'>Al-Qurraa' Schools, Ibadan.</h1>
-       <h1 className='text-center font-bold text-xl font-josefins pt-4 pb-3'>Daily Reminder</h1>
+       <h1 className='text-center font-bold text-xl font-josefins pt-4 pb-3'> Al-Qurraa' News</h1>
 
 
        {props.loading ? <div></div>:<div className="flex min-h-screen justify-center items-center text-xl font-bold"><Bars height="100" width="85" radius="10" color="#140a22" ariaLabel="loading"/></div>}
