@@ -38,10 +38,10 @@ function Homepage(props) {
                <div className={`min-h-screen  flex ${props.loading ? "block" : "hidden"} font-montserat font-bold text-2xl  justify-center items-center`}> Oops!!! There is No Lecture Available.</div>  :
             
                <div  key={i} className="flex items-center justify-center">
-               <div  className="flex  bg-gradient-to-b  from-[#f3e1c1] to-[#fefbe9] flex-col rounded-lg items-center justify-center w-[300px] md:w-[350px]  shadow-2xl my-8 " data-aos="zoom-in">
+               <div  className="flex  bg-gradient-to-b  from-[#f3e1c1] to-[#fefbe9] flex-col rounded-lg items-center justify-center w-[320px] md:w-[400px]  shadow-2xl my-8 " data-aos="zoom-in">
 
                <img src={info.Image[0].url}
-                alt={info.Title} className='rounded-lg object-cover h-auto shadow-2xl max-w-full md:w-[350px] md:h-[400px]' />
+                alt={info.Title} className='rounded-lg object-cover h-auto shadow-2xl max-w-full ' />
                <h1 className="text-[15px] font-bold px-4 pt-3 pb-0 ">  {info.Title} </h1>
                <h1 className="text-[14px] font-medium pt-2 px-4 pb-1">  {info.Description} </h1>
 
