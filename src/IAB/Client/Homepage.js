@@ -17,7 +17,7 @@ function Homepage(props) {
     },[])
 
 
-    const LatestLecture = props.Lecture.slice(0,7)
+    const LatestLecture = props.Lecture
     console.log(props)
 
 
